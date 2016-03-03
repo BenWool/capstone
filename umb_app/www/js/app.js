@@ -96,6 +96,7 @@ angular.module('your_app_name', [
     templateUrl: "views/auth/login.html",
     controller: 'LoginCtrl'
   })
+     
 
   .state('auth.signup', {
     url: '/signup',
@@ -275,6 +276,14 @@ angular.module('your_app_name', [
       }
     }
   })
+     .state('app.homepage', {
+         url: '/homepage',
+         views: {
+             'menuContent': {
+                 templateUrl: "views/app/homepage.html",
+             }
+         }
+     })
 
 ;
 
