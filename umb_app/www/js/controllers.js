@@ -12,7 +12,7 @@ angular.module('your_app_name.controllers', [])
 //LOGIN
 .controller('LoginCtrl', function($scope, $state, $templateCache, $q, $rootScope) {
 	$scope.doLogIn = function(){
-		$state.go('app.feeds-categories');
+		$state.go('app.homepage');
 	};
 
 	$scope.user = {};
@@ -35,13 +35,13 @@ angular.module('your_app_name.controllers', [])
 	$scope.user.email = "john@doe.com";
 
 	$scope.doSignUp = function(){
-		$state.go('app.feeds-categories');
+		$state.go('app.homepage');
 	};
 })
 
 .controller('ForgotPasswordCtrl', function($scope, $state) {
 	$scope.recoverPassword = function(){
-		$state.go('app.feeds-categories');
+		$state.go('homepage');
 	};
 
 	$scope.user = {};
