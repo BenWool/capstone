@@ -35,13 +35,13 @@ angular.module('your_app_name.controllers', [])
 	$scope.user.email = "john@doe.com";
 
 	$scope.doSignUp = function(){
-	    $state.go('app.homepage');
+		$state.go('app.homepage');
 	};
 })
 
 .controller('ForgotPasswordCtrl', function($scope, $state) {
 	$scope.recoverPassword = function(){
-	    $state.go('app.homepage');
+		$state.go('homepage');
 	};
 
 	$scope.user = {};

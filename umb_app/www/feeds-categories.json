@@ -1,7 +1,7 @@
 [
 	{
 		"id":"news",
-		"title":"News",
+		"title":"My Balance",
 		"image":"img/feeds/news.jpg",
 		"feed_sources":[
 			{
@@ -36,7 +36,7 @@
 	},
 	{
 		"id":"sports",
-		"title":"Sports",
+		"title":"My History",
 		"image":"img/feeds/sports.jpg",
 		"feed_sources":[
 			{
@@ -71,7 +71,7 @@
 	},
 	{
 		"id":"business",
-		"title":"Business",
+		"title":"Claims",
 		"image":"img/feeds/business.jpg",
 		"feed_sources":[
 			{
@@ -106,7 +106,7 @@
 	},
 	{
 		"id":"entertainment",
-		"title":"Entertainment",
+		"title":"Tax Information",
 		"image":"img/feeds/entertainment.jpg",
 		"feed_sources":[
 			{
@@ -134,7 +134,7 @@
 	},
 	{
 		"id":"politics",
-		"title":"Politics",
+		"title":"Analytics",
 		"image":"img/feeds/politics.jpg",
 		"feed_sources":[
 			{
@@ -162,7 +162,7 @@
 	},
 	{
 		"id":"technology",
-		"title":"Technology",
+		"title":"Contact UMB",
 		"image":"img/feeds/technology.jpg",
 		"feed_sources":[
 			{
