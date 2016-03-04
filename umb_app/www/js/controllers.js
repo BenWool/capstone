@@ -8,6 +8,9 @@ angular.module('your_app_name.controllers', [])
 .controller('AppCtrl', function($scope, $ionicConfig) {
 
 })
+.controller('analyticsCtrl', function ($scope, $state) {
+   
+})
 .controller('HomepageCtrl', function($scope,$state){
     $scope.dofileNew=function(){
         $state.go('app.newClaim');
