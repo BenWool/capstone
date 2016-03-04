@@ -24,7 +24,8 @@ angular.module('your_app_name', [
   'ngCordova',
   'slugifier',
   'ionic.contrib.ui.tinderCards',
-  'youtube-embed'
+  'youtube-embed',
+  //'n3-pie-chart'
 ])
 
 .run(function($ionicPlatform, PushNotificationsService, $rootScope, $ionicConfig, $timeout) {
@@ -294,7 +295,24 @@ angular.module('your_app_name', [
             }
         }
     })
-
+    .state('app.analytics', {
+        url: '/analytics',
+        views: {
+            'menuContent': {
+                templateUrl: "views/app/analytics.html",
+                controller: 'analyticsCtrl'
+            }
+        }
+    })
+        .state('app.taxforms', {
+        url: '/taxforms',
+        views: {
+            'menuContent': {
+                templateUrl: "views/app/taxforms.html"
+             
+            }
+        }
+    })
 ;
 
   // if none of the above states are matched, use this as the fallback
