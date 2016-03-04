@@ -281,9 +281,19 @@ angular.module('your_app_name', [
          views: {
              'menuContent': {
                  templateUrl: "views/app/homepage.html",
+                 controller:'HomepageCtrl'
              }
          }
      })
+    .state('app.newClaim', {
+        url: '/newClaim',
+        views: {
+            'menuContent': {
+                templateUrl: "views/app/newClaim.html",
+                controller: 'newClaimCtrl'
+            }
+        }
+    })
 
 ;
 

@@ -8,6 +8,16 @@ angular.module('your_app_name.controllers', [])
 .controller('AppCtrl', function($scope, $ionicConfig) {
 
 })
+.controller('HomepageCtrl', function($scope,$state){
+    $scope.dofileNew=function(){
+        $state.go('app.newClaim');
+    };
+})
+    .controller('newClaimCtrl', function ($scope, $state) {
+        $scope.doNewClaim = function () {
+            $state.go('app.homepage');
+        };
+    })
 
 //LOGIN
 .controller('LoginCtrl', function($scope, $state, $templateCache, $q, $rootScope) {
