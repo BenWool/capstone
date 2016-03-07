@@ -11,6 +11,28 @@ angular.module('your_app_name.controllers', [])
 .controller('analyticsCtrl', function ($scope, $state) {
    
 })
+.controller('taxFormsCtrl', function ($scope, $state) {
+    $scope.goTo5498SA = function () {
+        $state.go('app.Form5498SA');
+    };
+    $scope.goTo1099SA = function () {
+        $state.go('app.Form1099SA');
+    };
+
+})
+.controller('5498SACtrl', function ($scope, $state) {
+    $scope.goToTaxForms = function () {
+        $state.go('app.taxforms');
+    };
+
+})
+.controller('1099SACtrl', function ($scope, $state) {
+        $scope.goToTaxForms = function () {
+            $state.go('app.taxforms');
+        };
+
+    })
+
 .controller('HomepageCtrl', function($scope,$state){
     $scope.dofileNew=function(){
         $state.go('app.newClaim');
