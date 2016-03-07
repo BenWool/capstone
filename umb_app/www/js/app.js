@@ -308,11 +308,32 @@ angular.module('your_app_name', [
         url: '/taxforms',
         views: {
             'menuContent': {
-                templateUrl: "views/app/taxforms.html"
+                templateUrl: "views/app/taxforms.html",
+                controller: "taxFormsCtrl"
              
             }
         }
+        })
+    .state('app.Form5498SA', {
+        url: '/Form5498SA',
+        views: {
+            'menuContent': {
+                templateUrl: "views/app/Form5498SA.html",
+                controller: "5498SACtrl"
+
+            }
+        }
     })
+      .state('app.Form1099SA', {
+          url: '/Form1099SA',
+          views: {
+              'menuContent': {
+                  templateUrl: "views/app/Form1099SA.html",
+                  controller: "1099SACtrl"
+
+              }
+          }
+      })
 ;
 
   // if none of the above states are matched, use this as the fallback
